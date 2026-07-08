@@ -1,6 +1,8 @@
 Rings – Habit, Planning & Fitness Tracker
 
 A modern productivity and habit-tracking application built with React and Vite. Track your daily habits, monitor streaks, plan your weeks, organize sprints, and visualize your progress—all while keeping your data completely private in your browser.
+🚀 Live Demo
+https://bejewelled-babka-94ab9b.netlify.app/
 
 Dashboard
 
