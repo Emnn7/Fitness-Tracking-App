@@ -1,16 +1,65 @@
-# Rings — Habit, Planning & Streak Tracker
+Rings – Habit, Planning & Fitness Tracker
 
-Two folders here:
+A modern productivity and habit-tracking application built with React and Vite. Track your daily habits, monitor streaks, plan your weeks, organize sprints, and visualize your progress—all while keeping your data completely private in your browser.
 
-## `app/` — the installable app
+Dashboard
 
-This is what you want. Open `app/index.html` on your iPhone (via the Files app)
-and tap **Add to Home Screen** in Safari's share sheet. Full instructions and
-a rundown of what's included are in `app/README.txt`.
+* Daily progress rings
+* Habit tracking
+* Mood logging
+* Exercise logging
+* Productivity tracking
+* Meditation tracking
+* Daily streaks
+* Achievement badges
+* Point system
 
-## `source/` — the React source code
+📅 Planner
 
-For developers who want to modify or rebuild the app. Run `npm install` then
-`npm run dev` inside this folder, or `npm test` to run the 27 unit tests
-covering the streak/points/freeze/grace logic. `npm run build` regenerates
-the build output (to a local `dist/` folder) that mirrors what's in `app/`.
+* Monthly calendar
+* Weekly themes
+* Monthly goals
+* Time blocking
+* Progress overview
+
+🏃 Sprint Management
+
+* Create productivity sprints
+* Manage sprint tasks
+* Burndown chart
+* Sprint completion tracking
+
+📊 Insights
+
+* Weekly trends
+* Monthly trends
+* Mood analysis
+* Productivity analysis
+* Habit consistency
+* Streak statistics
+
+---
+
+⚙ Settings
+
+* Daily goals
+* Reminder settings
+* Colorblind mode
+* Export data
+* Import backups
+* Reset application
+
+🛠 Tech Stack
+
+* React 19
+* Vite
+* JavaScript
+* React Context API
+* useReducer
+* CSS Variables
+* Recharts
+* Local Storage
+* Service Worker
+* Oxlint
+
+
