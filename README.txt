@@ -62,4 +62,21 @@ Dashboard
 * Service Worker
 * Oxlint
 
+How to install on your iPhone
+
+1. Take the live demo link above.
+2. Open it in Safari any of you browser choice.
+3. In Safari, tap the Share icon (square with an arrow pointing up).
+4. Scroll down and tap Add to Home Screen.
+5. Tap Add.
+
+You'll now have a "Ring" icon on your home screen. Opening it launches the app
+full-screen, like a real app — no browser bar, no internet connection required.
+
+Notes
+
+- Everything runs locally in the browser — no data is sent anywhere, no account needed.
+- If you ever delete it from your home screen, just repeat the install steps above
+  with this same folder to add it back.
+
 
