@@ -1,0 +1,108 @@
+/* Fonts: system stacks only (no network fetch), to keep this fully functional offline.
+   Display = a warm serif system stack (Georgia/Iowan/Charter feel).
+   Body = the platform's native UI sans.
+   Mono = the platform's native monospace. */
+:root {
+  /* Color tokens */
+  --paper: #FAF8F4;
+  --ink: #1C1B19;
+  --ink-soft: #5C5A53;
+  --ink-faint: #9C9890;
+  --card: #FFFFFF;
+  --hairline: #E5E1D8;
+  --hairline-strong: #D6D1C4;
+
+  --exercise: #D96C4A;
+  --exercise-soft: #F4D9CD;
+  --work: #2C6E6B;
+  --work-soft: #D2E4E2;
+  --meditation: #7C6A9C;
+  --meditation-soft: #E4DCEE;
+  --mood: #D4A23A;
+  --mood-soft: #F3E3C2;
+
+  --success: #4D8B6B;
+  --danger: #C24D3F;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --shadow-card: 0 1px 2px rgba(28,27,25,0.04), 0 8px 20px rgba(28,27,25,0.05);
+  --shadow-float: 0 4px 16px rgba(28,27,25,0.10), 0 1px 3px rgba(28,27,25,0.08);
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* colorblind-safe alternates, swapped in via [data-colorblind="true"] */
+  --exercise-cb: #C9893B;
+  --work-cb: #2F6FA8;
+  --meditation-cb: #6B5B95;
+  --mood-cb: #B08A2E;
+}
+
+[data-colorblind="true"] {
+  --exercise: var(--exercise-cb);
+  --work: var(--work-cb);
+  --meditation: var(--meditation-cb);
+  --mood: var(--mood-cb);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: "Iowan Old Style", "Charter", "Georgia", "Times New Roman", serif;
+}
+
+.font-mono {
+  font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+button {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a { color: inherit; }
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+/* visible keyboard focus, per accessibility floor */
+:focus-visible {
+  outline: 2px solid var(--work);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}

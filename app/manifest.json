@@ -1,0 +1,14 @@
+{
+  "name": "Rings — Habit, Planning & Streak Tracker",
+  "short_name": "Rings",
+  "description": "Track mood, exercise, work, and meditation. Plan objectives, themes, and sprints. All local, all offline.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#FAF8F4",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
